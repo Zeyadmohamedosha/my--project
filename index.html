@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: sans-serif;
+            background-color: #f4f7fe;
+            color: #2b3674;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        /* شبكة عرض المنشورات */
+        #container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        /*تصميم الكارت*/
+        .card{
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0px 10px 30px rgba(112, 144, 176, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #e9edf7;
+            cursor: pointer;
+        }
+        .card:hover{
+            transform: translateY(-6px);
+            box-shadow: 0px 20px 40px rgba(112, 144, 176, 0.22);
+        }
+        .card .pragrah{
+            color: #dad00a;
+        }
+    </style>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div id="container">
+      <input type="name" id="name">
+      <button id="btn">Click</button>
+    </div>
+    <script src="index.js"></script>
+</html>
